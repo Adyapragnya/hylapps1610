@@ -1,0 +1,44 @@
+.leaflet-control-measure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;  /* Increased width for the button */
+    height: 60px; /* Increased height for the button */
+    background-color: #ffffff; /* Set a light background color */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Change cursor on hover */
+    transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s; /* Smooth transition */
+    border-radius: 8%; /* Make the button circular */
+    /* Add box shadow */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); 
+}
+
+/* Change styles on hover */
+.leaflet-control-measure:hover {
+    background-color: rgba(255, 255, 255, 1); /* Slightly increase background opacity on hover */
+    transform: translateY(-2px); /* Slight upward movement on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+.leaflet-control-measure:active {
+    background-color: #656565b3; /* Change background color on click */
+    transform: translateY(0); /* Reset upward movement */
+}
+
+/* Active state style for the measuring button */
+.leaflet-control-measure.active {
+    background-color: #656565b3; /* Light green background when active */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Reset shadow for active state */
+}
+
+/* MeasureControl.css */
+.crosshair {
+    cursor: crosshair !important; /* Ensure the cursor style is applied */
+}
+
+.leaflet-point-icon {
+    background-color: red; /* Change to your desired color */
+    border-radius: 50%; /* Make it round */
+    width: 4px; /* Increased size of the point */
+    height: 4px; /* Increased size of the point */
+}

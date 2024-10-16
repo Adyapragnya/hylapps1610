@@ -1,0 +1,93 @@
+/* Style for the pie chart button */
+.pie-chart-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 9px;
+  background-color: #0F67B1;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  z-index: 10; /* Keep z-index if needed for stacking context */
+}
+
+.pie-chart-button:hover {
+  background-color: #0C4E89;
+}
+
+/* Container for the pie chart */
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  padding-top: 20px; /* Add padding to give space around chart */
+  position: relative; /* Ensure relative positioning for the download button */
+}
+
+/* Header and button alignment */
+.header-container {
+  display: flex;
+  justify-content: space-between; /* Space between the items */
+  width: 100%; /* Full width */
+  align-items: center; /* Center vertically */
+  padding: 10px 20px; /* Add some padding for better appearance */
+}
+
+/* Pie chart container */
+.pie-chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0; /* Add space between chart and legends */
+}
+
+/* Style for the legend */
+.legend-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Wrap legends if necessary */
+  margin-top: 10px;
+}
+
+/* Individual legend item */
+.legend-item {
+  margin: 5px 10px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+/* Color box for legend */
+.legend-color-box {
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+  border-radius: 2px;
+}
+
+/* Custom tooltip styles */
+.custom-tooltip {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 12px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .pie-chart-container {
+    margin: 10px;
+  }
+
+  .pie-chart-button {
+    font-size: 12px;
+  }
+
+  .legend-item {
+    font-size: 10px;
+  }
+}
