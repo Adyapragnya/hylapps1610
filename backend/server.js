@@ -571,7 +571,7 @@ const userkey = 'WS-096EE673-456A8B'; // Your VTExplorer API key
 // start-cron
 // Define NAVSTAT intervals (in milliseconds)
 const navStatIntervals = {
-    0: 1000 * 60 * 15, // For NAVSTAT 0
+    0: 1000 * 60 * 300, // For NAVSTAT 0
     1: 1000 * 60 * 300, // For NAVSTAT 1
     2: 1000 * 60 * 300, // For NAVSTAT 2
     3: 1000 * 60 * 300, // For NAVSTAT 3
