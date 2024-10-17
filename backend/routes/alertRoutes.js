@@ -179,12 +179,12 @@ if (isInside && !previousStatus) {
     vessel.AIS.NAME,
     geofence.geofenceName,
     geofenceType,
-    `"${vessel.AIS.NAME}" has entered "${geofence.geofenceName}" , "${formattedDate}" .` ,
+    `"${vessel.AIS.NAME}" has arrived "${geofence.geofenceName}" , "${formattedDate}" .` ,
     alert.message
   );
 
   vesselGeofenceStatus.set(vesselKey, true); // Update status to inside
-  console.log(`Alert email sent for vessel ${vessel.AIS.NAME} entered inside ${geofence.geofenceName}`);
+  console.log(`Alert email sent for vessel ${vessel.AIS.NAME} arrived inside ${geofence.geofenceName}`);
 } 
 // Check if the vessel has exited the geofence
 else if (!isInside && previousStatus) {
